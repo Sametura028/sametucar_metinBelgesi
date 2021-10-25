@@ -32,24 +32,24 @@ namespace _25ekim2
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dosyaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.yeniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.açToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.düzenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.biçimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.görünümToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.renkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yazıTipiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.yeniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.açToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.gerialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.safdsafsaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.asfsaffsaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dfdfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dsddseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.renkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yazıTipiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
@@ -80,17 +80,18 @@ namespace _25ekim2
             this.dosyaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.dosyaToolStripMenuItem.Text = "dosya";
             // 
-            // statusStrip1
+            // yeniToolStripMenuItem
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.toolStripStatusLabel2,
-            this.toolStripStatusLabel3});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
-            this.statusStrip1.TabIndex = 1;
-            this.statusStrip1.Text = "statusStrip1";
+            this.yeniToolStripMenuItem.Name = "yeniToolStripMenuItem";
+            this.yeniToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.yeniToolStripMenuItem.Text = "yeni";
+            // 
+            // açToolStripMenuItem
+            // 
+            this.açToolStripMenuItem.Name = "açToolStripMenuItem";
+            this.açToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.açToolStripMenuItem.Text = "aç";
+            this.açToolStripMenuItem.Click += new System.EventHandler(this.açToolStripMenuItem_Click);
             // 
             // düzenToolStripMenuItem
             // 
@@ -113,12 +114,38 @@ namespace _25ekim2
             this.görünümToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.görünümToolStripMenuItem.Text = "görünüm";
             // 
+            // renkToolStripMenuItem
+            // 
+            this.renkToolStripMenuItem.Name = "renkToolStripMenuItem";
+            this.renkToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.renkToolStripMenuItem.Text = "renk";
+            this.renkToolStripMenuItem.Click += new System.EventHandler(this.renkToolStripMenuItem_Click);
+            // 
+            // yazıTipiToolStripMenuItem
+            // 
+            this.yazıTipiToolStripMenuItem.Name = "yazıTipiToolStripMenuItem";
+            this.yazıTipiToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.yazıTipiToolStripMenuItem.Text = "yazı tipi";
+            this.yazıTipiToolStripMenuItem.Click += new System.EventHandler(this.yazıTipiToolStripMenuItem_Click);
+            // 
             // yardımToolStripMenuItem
             // 
             this.yardımToolStripMenuItem.Name = "yardımToolStripMenuItem";
             this.yardımToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.yardımToolStripMenuItem.Text = "yardım";
             this.yardımToolStripMenuItem.Click += new System.EventHandler(this.yardımToolStripMenuItem_Click);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.toolStripStatusLabel2,
+            this.toolStripStatusLabel3});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
@@ -138,18 +165,6 @@ namespace _25ekim2
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
             this.toolStripStatusLabel3.Size = new System.Drawing.Size(35, 17);
             this.toolStripStatusLabel3.Text = "%100";
-            // 
-            // yeniToolStripMenuItem
-            // 
-            this.yeniToolStripMenuItem.Name = "yeniToolStripMenuItem";
-            this.yeniToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.yeniToolStripMenuItem.Text = "yeni";
-            // 
-            // açToolStripMenuItem
-            // 
-            this.açToolStripMenuItem.Name = "açToolStripMenuItem";
-            this.açToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.açToolStripMenuItem.Text = "aç";
             // 
             // contextMenuStrip1
             // 
@@ -192,20 +207,6 @@ namespace _25ekim2
             this.dsddseToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.dsddseToolStripMenuItem.Text = "dsddse";
             // 
-            // renkToolStripMenuItem
-            // 
-            this.renkToolStripMenuItem.Name = "renkToolStripMenuItem";
-            this.renkToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.renkToolStripMenuItem.Text = "renk";
-            this.renkToolStripMenuItem.Click += new System.EventHandler(this.renkToolStripMenuItem_Click);
-            // 
-            // yazıTipiToolStripMenuItem
-            // 
-            this.yazıTipiToolStripMenuItem.Name = "yazıTipiToolStripMenuItem";
-            this.yazıTipiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.yazıTipiToolStripMenuItem.Text = "yazı tipi";
-            this.yazıTipiToolStripMenuItem.Click += new System.EventHandler(this.yazıTipiToolStripMenuItem_Click);
-            // 
             // richTextBox1
             // 
             this.richTextBox1.ContextMenuStrip = this.contextMenuStrip1;
@@ -215,6 +216,7 @@ namespace _25ekim2
             this.richTextBox1.Size = new System.Drawing.Size(800, 404);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = " ";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // Form1
             // 

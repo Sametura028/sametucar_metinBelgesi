@@ -37,5 +37,20 @@ namespace _25ekim2
             yztip.ShowDialog(); 
             richTextBox1.Font=yztip.Font;
         }
+
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            String[] kelime = richTextBox1.Text.Split();
+            int ksayisi = richTextBox1.Text.Trim().Split().Length;
+            toolStripStatusLabel2.Text = ksayisi.ToString();
+        }
+
+        private void açToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog yeniDosya = new OpenFileDialog();
+            yeniDosya.Filter = "resim dosyası | .jpg";
+            yeniDosya.ShowDialog();
+        }
     }
 }

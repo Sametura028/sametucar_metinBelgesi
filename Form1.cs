@@ -49,7 +49,7 @@ namespace _25ekim2
         private void açToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog yeniDosya = new OpenFileDialog();
-            yeniDosya.Filter = "resim dosyası | *.txt";
+            yeniDosya.Filter = "resim dosyası | *";
             yeniDosya.ShowDialog();
         }
     }

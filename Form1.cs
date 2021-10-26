@@ -49,8 +49,13 @@ namespace _25ekim2
         private void açToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog yeniDosya = new OpenFileDialog();
-            yeniDosya.Filter = "resim dosyası | *";
+            yeniDosya.Filter = "Tüm dosyalar| * *";
             yeniDosya.ShowDialog();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

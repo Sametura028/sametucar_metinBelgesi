@@ -59,6 +59,7 @@ namespace _25ekim2
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dosyaToolStripMenuItem,
             this.düzenToolStripMenuItem,
@@ -67,7 +68,7 @@ namespace _25ekim2
             this.yardımToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,32 +78,32 @@ namespace _25ekim2
             this.yeniToolStripMenuItem,
             this.açToolStripMenuItem});
             this.dosyaToolStripMenuItem.Name = "dosyaToolStripMenuItem";
-            this.dosyaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.dosyaToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.dosyaToolStripMenuItem.Text = "dosya";
             // 
             // yeniToolStripMenuItem
             // 
             this.yeniToolStripMenuItem.Name = "yeniToolStripMenuItem";
-            this.yeniToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.yeniToolStripMenuItem.Size = new System.Drawing.Size(119, 26);
             this.yeniToolStripMenuItem.Text = "yeni";
             // 
             // açToolStripMenuItem
             // 
             this.açToolStripMenuItem.Name = "açToolStripMenuItem";
-            this.açToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.açToolStripMenuItem.Size = new System.Drawing.Size(119, 26);
             this.açToolStripMenuItem.Text = "aç";
             this.açToolStripMenuItem.Click += new System.EventHandler(this.açToolStripMenuItem_Click);
             // 
             // düzenToolStripMenuItem
             // 
             this.düzenToolStripMenuItem.Name = "düzenToolStripMenuItem";
-            this.düzenToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.düzenToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
             this.düzenToolStripMenuItem.Text = "düzen";
             // 
             // biçimToolStripMenuItem
             // 
             this.biçimToolStripMenuItem.Name = "biçimToolStripMenuItem";
-            this.biçimToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.biçimToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
             this.biçimToolStripMenuItem.Text = "biçim";
             // 
             // görünümToolStripMenuItem
@@ -111,39 +112,41 @@ namespace _25ekim2
             this.renkToolStripMenuItem,
             this.yazıTipiToolStripMenuItem});
             this.görünümToolStripMenuItem.Name = "görünümToolStripMenuItem";
-            this.görünümToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.görünümToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.görünümToolStripMenuItem.Text = "görünüm";
             // 
             // renkToolStripMenuItem
             // 
             this.renkToolStripMenuItem.Name = "renkToolStripMenuItem";
-            this.renkToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.renkToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.renkToolStripMenuItem.Text = "renk";
             this.renkToolStripMenuItem.Click += new System.EventHandler(this.renkToolStripMenuItem_Click);
             // 
             // yazıTipiToolStripMenuItem
             // 
             this.yazıTipiToolStripMenuItem.Name = "yazıTipiToolStripMenuItem";
-            this.yazıTipiToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.yazıTipiToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.yazıTipiToolStripMenuItem.Text = "yazı tipi";
             this.yazıTipiToolStripMenuItem.Click += new System.EventHandler(this.yazıTipiToolStripMenuItem_Click);
             // 
             // yardımToolStripMenuItem
             // 
             this.yardımToolStripMenuItem.Name = "yardımToolStripMenuItem";
-            this.yardımToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.yardımToolStripMenuItem.Size = new System.Drawing.Size(69, 24);
             this.yardımToolStripMenuItem.Text = "yardım";
             this.yardımToolStripMenuItem.Click += new System.EventHandler(this.yardımToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2,
             this.toolStripStatusLabel3});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 528);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1067, 26);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -151,23 +154,24 @@ namespace _25ekim2
             // 
             this.toolStripStatusLabel1.LinkColor = System.Drawing.Color.White;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(91, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(112, 20);
             this.toolStripStatusLabel1.Text = "Windows(CRLF)";
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(47, 17);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(58, 20);
             this.toolStripStatusLabel2.Text = "st1,stn1";
             // 
             // toolStripStatusLabel3
             // 
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(35, 17);
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(45, 20);
             this.toolStripStatusLabel3.Text = "%100";
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gerialToolStripMenuItem,
             this.safdsafsaToolStripMenuItem,
@@ -175,60 +179,63 @@ namespace _25ekim2
             this.dfdfToolStripMenuItem,
             this.dsddseToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(123, 114);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(140, 124);
             // 
             // gerialToolStripMenuItem
             // 
             this.gerialToolStripMenuItem.Name = "gerialToolStripMenuItem";
-            this.gerialToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.gerialToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.gerialToolStripMenuItem.Text = "gerial";
             // 
             // safdsafsaToolStripMenuItem
             // 
             this.safdsafsaToolStripMenuItem.Name = "safdsafsaToolStripMenuItem";
-            this.safdsafsaToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.safdsafsaToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.safdsafsaToolStripMenuItem.Text = "safdsafsa";
             // 
             // asfsaffsaToolStripMenuItem
             // 
             this.asfsaffsaToolStripMenuItem.Name = "asfsaffsaToolStripMenuItem";
-            this.asfsaffsaToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.asfsaffsaToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.asfsaffsaToolStripMenuItem.Text = "asfsaffsa";
             // 
             // dfdfToolStripMenuItem
             // 
             this.dfdfToolStripMenuItem.Name = "dfdfToolStripMenuItem";
-            this.dfdfToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.dfdfToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.dfdfToolStripMenuItem.Text = "dfdf";
             // 
             // dsddseToolStripMenuItem
             // 
             this.dsddseToolStripMenuItem.Name = "dsddseToolStripMenuItem";
-            this.dsddseToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.dsddseToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
             this.dsddseToolStripMenuItem.Text = "dsddse";
             // 
             // richTextBox1
             // 
             this.richTextBox1.ContextMenuStrip = this.contextMenuStrip1;
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 24);
+            this.richTextBox1.Location = new System.Drawing.Point(0, 28);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(800, 404);
+            this.richTextBox1.Size = new System.Drawing.Size(1067, 500);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = " ";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

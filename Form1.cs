@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace _25ekim2
 {
@@ -51,6 +52,18 @@ namespace _25ekim2
             OpenFileDialog yeniDosya = new OpenFileDialog();
             yeniDosya.Filter = "Tüm dosyalar| * *";
             yeniDosya.ShowDialog();
+            if (yeniDosya.ShowDialog() == DialogResult.OK)
+            {
+                FileInfo fi = new FileInfo(yeniDosya.FileName);
+                if (fi.Exists)
+                {
+                    System.Diagnostics.Process.Start(yeniDosya.FileName);
+                }
+                else 
+                {
+                    MessageBox.Show("HATA");
+                }
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -84,13 +84,14 @@ namespace _25ekim2
             // yeniToolStripMenuItem
             // 
             this.yeniToolStripMenuItem.Name = "yeniToolStripMenuItem";
-            this.yeniToolStripMenuItem.Size = new System.Drawing.Size(119, 26);
+            this.yeniToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.yeniToolStripMenuItem.Text = "yeni";
+            this.yeniToolStripMenuItem.Click += new System.EventHandler(this.yeniToolStripMenuItem_Click);
             // 
             // açToolStripMenuItem
             // 
             this.açToolStripMenuItem.Name = "açToolStripMenuItem";
-            this.açToolStripMenuItem.Size = new System.Drawing.Size(119, 26);
+            this.açToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.açToolStripMenuItem.Text = "aç";
             this.açToolStripMenuItem.Click += new System.EventHandler(this.açToolStripMenuItem_Click);
             // 
@@ -216,7 +217,7 @@ namespace _25ekim2
             this.richTextBox1.ContextMenuStrip = this.contextMenuStrip1;
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.Location = new System.Drawing.Point(0, 28);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(1067, 500);
             this.richTextBox1.TabIndex = 4;
@@ -232,7 +233,7 @@ namespace _25ekim2
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

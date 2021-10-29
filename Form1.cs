@@ -69,5 +69,11 @@ namespace _25ekim2
         {
 
         }
+
+        private void yeniToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Directory.CreateDirectory("C: yeni dosya");
+        }
     }
 }

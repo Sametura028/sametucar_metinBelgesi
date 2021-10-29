@@ -61,7 +61,7 @@ namespace _25ekim2
                 }
                 else 
                 {
-                    MessageBox.Show("HATA!!!");
+                    MessageBox.Show("HATA");
                 }
             }
         }

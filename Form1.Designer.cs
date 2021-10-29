@@ -34,6 +34,7 @@ namespace _25ekim2
             this.dosyaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yeniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.açToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yeniToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.düzenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.biçimToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.görünümToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,7 +77,8 @@ namespace _25ekim2
             // 
             this.dosyaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.yeniToolStripMenuItem,
-            this.açToolStripMenuItem});
+            this.açToolStripMenuItem,
+            this.yeniToolStripMenuItem1});
             this.dosyaToolStripMenuItem.Name = "dosyaToolStripMenuItem";
             this.dosyaToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.dosyaToolStripMenuItem.Text = "dosya";
@@ -85,8 +87,8 @@ namespace _25ekim2
             // 
             this.yeniToolStripMenuItem.Name = "yeniToolStripMenuItem";
             this.yeniToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.yeniToolStripMenuItem.Text = "yeni";
-            this.yeniToolStripMenuItem.Click += new System.EventHandler(this.yeniToolStripMenuItem_Click);
+            this.yeniToolStripMenuItem.Text = "oluştur";
+            this.yeniToolStripMenuItem.Click += new System.EventHandler(this.oluşturToolStripMenuItem_Click);
             // 
             // açToolStripMenuItem
             // 
@@ -94,6 +96,13 @@ namespace _25ekim2
             this.açToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.açToolStripMenuItem.Text = "aç";
             this.açToolStripMenuItem.Click += new System.EventHandler(this.açToolStripMenuItem_Click);
+            // 
+            // yeniToolStripMenuItem1
+            // 
+            this.yeniToolStripMenuItem1.Name = "yeniToolStripMenuItem1";
+            this.yeniToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.yeniToolStripMenuItem1.Text = "yeni";
+            this.yeniToolStripMenuItem1.Click += new System.EventHandler(this.yeniToolStripMenuItem1_Click);
             // 
             // düzenToolStripMenuItem
             // 
@@ -271,6 +280,7 @@ namespace _25ekim2
         private System.Windows.Forms.ToolStripMenuItem yazıTipiToolStripMenuItem;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.ToolStripMenuItem yeniToolStripMenuItem1;
     }
 }
 

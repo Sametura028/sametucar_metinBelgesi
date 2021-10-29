@@ -51,7 +51,6 @@ namespace _25ekim2
         {
             OpenFileDialog yeniDosya = new OpenFileDialog();
             yeniDosya.Filter = "Tüm dosyalar| * *";
-            yeniDosya.ShowDialog();
             if (yeniDosya.ShowDialog() == DialogResult.OK)
             {
                 FileInfo fi = new FileInfo(yeniDosya.FileName);
